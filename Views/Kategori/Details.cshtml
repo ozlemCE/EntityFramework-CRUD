@@ -1,0 +1,23 @@
+﻿@model EntityFrameworkIslemler.Models.Kategori
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Kategori Detayları</h2>
+
+<fieldset>
+    <legend>Kategori</legend>
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Adi)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Adi)
+        </dd>
+    </dl>
+</fieldset>
+<p>
+    @Html.ActionLink("Düzenle", "Duzenle", new { id=Model.Id }) |
+    @Html.ActionLink("Kategorilere Dön", "Index")
+</p>
